@@ -1,0 +1,9 @@
+// Add class to sticky header on scroll
+
+jQuery(window).scroll(function() {
+  if( jQuery('.av-submenu-container').css('position') == 'fixed' ) {
+     jQuery('.av-submenu-container').addClass("sticky");
+  } else {
+     jQuery('.av-submenu-container').removeClass("sticky");
+  }
+}); 
