@@ -1,0 +1,10 @@
+jQuery(window).scroll(function(){
+  var threshold = 200; // number of pixels before bottom of page that you want to start fading
+  var op = ((jQuery(document).height() - jQuery(window).height()) - jQuery(window).scrollTop()) / threshold;
+	if( op <= 0 ){
+		jQuery(".hide-at-bottom").hide();
+	} else {
+		jQuery(".hide-at-bottom").show();
+	}
+	jQuery(".hide-at-bottom").css("opacity", op ); 
+});
